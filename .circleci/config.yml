@@ -22,7 +22,7 @@ jobs:
             mv dockle /usr/local/bin
       - run:
           name: Scan the local image with Dockle
-          command: dockle --exit-code 1 dockle-ci-test:${CIRCLE_SHA1}
+          command: dockle --exit-code 0 dockle-ci-test:${CIRCLE_SHA1}
 workflows:
   version: 2
   release:
